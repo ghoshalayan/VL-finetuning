@@ -39,13 +39,14 @@ qwen2.5-vl-lora-model/
 *.pt
 *.pth
 
-# Dataset images (ignore images, keep structure via .gitkeep)
-dataset/images/*
-!dataset/images/.gitkeep
-test_dataset/ecco/*
-!test_dataset/ecco/.gitkeep
-test_dataset/not_ecco/*
-!test_dataset/not_ecco/.gitkeep
+# Dataset folders (ignore extracted content)
+dataset/images/
+test_dataset/ecco/
+test_dataset/not_ecco/
+
+# Allow archive files
+!*.zip
+!*.rar
 
 # Logs
 *.log
