@@ -15,11 +15,23 @@ This folder contains everything needed to fine-tune the Qwen2.5-VL model for ECC
 
 ## Dataset Setup
 
-The dataset is provided as zip files (`dataset.zip` and `test_dataset.zip`).
+## Dataset Setup
 
-1. **Download the zip files** provided by the repository owner.
-2. **Extract** them into the project root directory.
-3. **Replace** the existing `dataset` and `test_dataset` folders if prompted.
+The dataset is provided as two zip files:
+1. `images.zip` (Training images)
+2. `test_dataset.zip` (Evaluation images)
+
+### Setup Steps:
+
+1. **Training Data**:
+   - Go to `dataset/` folder.
+   - Extract `images.zip` here.
+   - Ensure the folder structure is `dataset/images/`.
+
+2. **Test Data**:
+   - Go to the root folder.
+   - Extract `test_dataset.zip` here.
+   - It should create `test_dataset/ecco/` and `test_dataset/not_ecco/`.
 
 After extraction, your folder structure should look like this:
 ```
