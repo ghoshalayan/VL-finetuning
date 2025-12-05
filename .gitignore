@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Model checkpoints and outputs (large files)
+qwen2.5-vl-lora-model/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Dataset images (ignore images, keep structure via .gitkeep)
+dataset/images/*
+!dataset/images/.gitkeep
+test_dataset/ecco/*
+!test_dataset/ecco/.gitkeep
+test_dataset/not_ecco/*
+!test_dataset/not_ecco/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Unsloth cache
+unsloth_compiled_cache/
