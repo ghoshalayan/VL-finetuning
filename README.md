@@ -11,11 +11,6 @@ This folder contains everything needed to fine-tune the Qwen2.5-VL model for ECC
 - `dataset/` - Training dataset with images and train.json
 - `test_dataset/` - Test dataset for evaluation (ecco/ and not_ecco/ subfolders)
 
-
-## Dataset Setup
-
-## Dataset Setup
-
 ## Dataset Setup
 
 The repository includes two RAR archives containing the dataset:
