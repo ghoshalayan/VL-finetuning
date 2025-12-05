@@ -11,6 +11,27 @@ This folder contains everything needed to fine-tune the Qwen2.5-VL model for ECC
 - `dataset/` - Training dataset with images and train.json
 - `test_dataset/` - Test dataset for evaluation (ecco/ and not_ecco/ subfolders)
 
+## Dataset Setup
+
+## Dataset Setup
+
+The dataset is provided as zip files (`dataset.zip` and `test_dataset.zip`).
+
+1. **Download the zip files** provided by the repository owner.
+2. **Extract** them into the project root directory.
+3. **Replace** the existing `dataset` and `test_dataset` folders if prompted.
+
+After extraction, your folder structure should look like this:
+```
+qwen25_vl_training/
+├── dataset/
+│   ├── images/         <-- Contains training images
+│   └── train.json      <-- Dataset JSON
+├── test_dataset/
+│   ├── ecco/           <-- Contains ECCO test images
+│   └── not_ecco/       <-- Contains Non-ECCO test images
+```
+
 ## Quick Start
 
 ### 1. Install PyTorch with CUDA Support
