@@ -12,10 +12,14 @@ This folder contains everything needed to fine-tune the Qwen2.5-VL model for ECC
 - `test_dataset/` - Test dataset for evaluation (ecco/ and not_ecco/ subfolders)
 
 ## Dataset Setup
+The repository includes RAR archives containing the dataset and pre-trained model:
 
-The repository includes two RAR archives containing the dataset:
+**Dataset:**
 1. `images.rar` (Training images)
 2. `test_dataset.rar` (Evaluation images)
+
+**Pre-trained Model:**
+3. `qwen2.5-vl-lora-model.rar` (Fine-tuned LoRA checkpoints)
 
 ### Setup Steps:
 
@@ -27,15 +31,23 @@ The repository includes two RAR archives containing the dataset:
    - Extract `test_dataset.rar` into the root folder.
    - You should end up with `test_dataset/ecco/` and `test_dataset/not_ecco/`.
 
+3. **Extract Pre-trained Model** (optional, for inference/evaluation):
+   - Extract `qwen2.5-vl-lora-model.rar` into the root folder.
+   - You should end up with `qwen2.5-vl-lora-model/`.
+
 After extraction, your folder structure should look like this:
 ```
 qwen25_vl_training/
 ├── dataset/
-│   ├── images/         <-- Contains training images
-│   └── train.json      <-- Dataset JSON
+│   ├── images/                 <-- Training images
+│   └── train.json
 ├── test_dataset/
-│   ├── ecco/           <-- Contains ECCO test images
-│   └── not_ecco/       <-- Contains Non-ECCO test images
+│   ├── ecco/                   <-- ECCO test images
+│   └── not_ecco/               <-- Non-ECCO test images
+├── qwen2.5-vl-lora-model/      <-- Pre-trained model checkpoints
+│   ├── checkpoint-10/
+│   ├── checkpoint-20/
+│   └── ...
 ```
 
 ## Quick Start
